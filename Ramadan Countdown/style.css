@@ -1,0 +1,68 @@
+body {
+    background-image: url(file-18913-2d11cab24467c01f935f83fa8ec58bf8-1024x664.webp);
+    background-repeat: ;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.countdown-box {
+    background-color: #4b2e2a;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-title {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #fdd835;
+    margin-bottom: 20px;
+}
+
+.countdown-message {
+    color: #f1f1f1;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.time-section {
+    background-color:#3a2220;
+    padding: 20px 10px;
+    border-radius: 10px;
+    min-width: 80px;
+}
+
+.time-number {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fdd835;
+    display: block;
+}
+
+.time-label {
+    font-size: 0.8em;
+    color: #e0e0e0;
+    text-transform: uppercase;
+}
+
+.arabic-text {
+    font-size: 1.4em;
+    color: #ffd740;
+    font-weight: bold;
+}
