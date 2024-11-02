@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <Script>
+        //         QUESTION 1 
+        var currentdate = new Date();
+        document.write(currentdate)
+
+
+        // // QUESTION 2 
+
+        var currentDate = new Date();
+        var monthNames = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+        var currentMonth = monthNames[currentDate.getMonth()];
+        alert(currentMonth);
+
+        // QUESTION 3 
+
+        var currentDate = new Date();
+        var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        var currentDay = dayNames[currentDate.getDay()];
+        alert(currentDay)
+
+        //   Question 4 
+
+        var currentDate = new Date();
+        var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var currentDay = dayNames[currentDate.getDay()];
+        if (currentDay === "Saturday" || "Sunday") {
+            alert("It’s Fun day!");
+        }
+
+        // Question 5 
+
+        var currentDate = new Date();
+        var day = currentDate.getDate();
+        if (day < 16) {
+            alert("this is first fifteen days of the month ")
+        } else {
+            alert("this is last fifteen days of the month ")
+        }
+
+        // Question 6 
+
+        var currentDate = new Date();
+        console.log("Current Date: " + currentDate.toString());
+
+        var elapsedMilliseconds = currentDate.getTime();
+        console.log("Elapsed milliseconds since January 1, 1970: " + elapsedMilliseconds);
+
+        var elapsedMinutes = elapsedMilliseconds / (1000 * 60);
+        console.log("Elapsed minutes since January 1, 1970: " + elapsedMinutes);
+
+        // Question 7
+
+        var currentDate = new Date();
+        var date = currentDate.getHours();
+        if (date < 12) {
+            alert("its AM")
+        } else {
+            alert("its PM")
+        }
+
+        // Question  8 
+
+        var laterdate = new Date(2020, 11, 31);
+        alert(laterdate)
+
+        // Question 9 
+        var ramadanStartDate = new Date(2015, 6, 18);
+        var currentDate = new Date();
+        var timeDifference = currentDate - ramadanStartDate;
+        var daysPassed = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        alert(daysPassed + " days Have passed since 1st Ramadan,2015 ");
+
+        // Question 10 
+
+        var referenceDate = new Date("December 5, 2015 22:50:16 GMT+0500");
+        console.log("On reference date " + referenceDate.toString() + ",");
+        var beginningOf2015 = new Date("January 1, 2015 00:00:00 GMT+0500");
+        var elapsedSeconds = Math.floor((referenceDate - beginningOf2015) / 1000);
+        console.log(elapsedSeconds + " seconds had passed since beginning of 2015");
+
+
+        // Question 11 
+
+        var currentDate = new Date();
+        console.log("current date: " + currentDate.toString());
+        var oneHourAgo = new Date(currentDate);
+        oneHourAgo.setHours(currentDate.getHours() - 1);
+        console.log("1 hour ago, it was " + oneHourAgo.toString());
+
+        // Question 12 
+
+        var currentDate = new Date();
+        alert("Current date: " + currentDate);
+        var pastDate = new Date(currentDate);
+        pastDate.setFullYear(currentDate.getFullYear() - 100);
+        alert("100 years back, it was: " + pastDate);
+
+        // Question 13
+
+        var age = prompt("Enter your age:");
+        var currentYear = new Date().getFullYear();
+        var birthYear = currentYear - age;
+        document.write("Your age is " + age + "<br>");
+        document.write("Your birth year is " + birthYear);
+
+        // Question 14
+
+        var customerName = "ABC Customer";
+        var currentMonth = "February";
+        var numberOfUnits = 410;
+        var chargesPerUnit = 16;
+        var latePaymentSurcharge = 350;
+        var netAmountPayable = Math.round(numberOfUnits * chargesPerUnit);
+        var grossAmountPayable = Math.round(netAmountPayable + latePaymentSurcharge);
+        document.write("<h1>K-Electric Bill</h1>");
+        document.write("Customer Name: " + customerName + "<br>");
+        document.write("Month: " + currentMonth + "<br>");
+        document.write("Number of units: " + numberOfUnits + "<br>");
+        document.write("Charges per unit: " + chargesPerUnit + "<br>");
+        document.write("Net Amount Payable (within Due Date): " + netAmountPayable + "<br>");
+        document.write("Late payment surcharge: " + latePaymentSurcharge + "<br>");
+        document.write("Gross Amount Payable (after Due Date): " + grossAmountPayable);
+
+
+
+
+    </Script>
+
+</body>
+
+</html>

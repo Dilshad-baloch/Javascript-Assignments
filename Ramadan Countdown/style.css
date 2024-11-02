@@ -1,6 +1,8 @@
 body {
-    background-image: url(file-18913-2d11cab24467c01f935f83fa8ec58bf8-1024x664.webp);
-    background-repeat: ;
+    background-image: url(f6e45cac4eab3dc4f9efc422702f292b.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
     font-family: Arial, sans-serif;
     display: flex;
