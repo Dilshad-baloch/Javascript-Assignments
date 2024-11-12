@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Toss Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="player-inputs">
+        <input type="text" id="player1" placeholder="Player 1">
+        <input type="text" id="player2" placeholder="Player 2">
+        <button onclick="submitPlayers()">Submit</button>
+    </div>
+    <div class="character">
+      <img src="istockphoto-1185219157-612x612-removebg-preview.png" alt="Character" id="characterImage">
+  </div>
+    
+    <div class="coin-toss">
+        <div id="callDisplay">Player to Call</div>
+        <button id="headsButton" onclick="makeCall('heads')">HEADS</button>
+        <button id="tailsButton" onclick="makeCall('tails')">TAILS</button>
+        <p id="resultDisplay"></p>
+        <button id="tossButton" onclick="tossCoin()">TOSS THE COIN</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="game.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  background: url('night-cricket-stadium-illustration-vector-600nw-2160100275.webp') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px); 
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.character img {
+  width: 150px; 
+    margin-bottom: 20px;
+  
+}
+
+.player-inputs input {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c86ee;
+}
+
+#callDisplay, #resultDisplay {
+  font-size: 24px;
+  margin: 20px;
+}
